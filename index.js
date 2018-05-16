@@ -13,6 +13,8 @@ const printBoard = () => {
   }
 }
 
+
+
 const getInput = player => async () => {
   const {turn} = game.getState()
   if (turn !== player) return
@@ -27,6 +29,7 @@ const getInput = player => async () => {
 
 // Create the store
 const game = createStore(gameReducer)
+
 
 // Debug: Print the state
 // game.subscribe(() => console.log(game.getState()))
